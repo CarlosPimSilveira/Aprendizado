@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe - 11</title>
+</head>
+<body>
+    <h1>Inserindo vídeo hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="Video.mp4" width="700" controls loop></video>
+    <br>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aM4GANxbO1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <!--<video controls>
+        <source src="Video.mp4" type="Video/mp4">
+        caso fosse ter outros arquivos de video poderiamos colocar e o navegador iria entender e colocar o que suporta
+    </video>-->
+    <h1>Áudio</h1>
+    <audio src="Burn It Down - Linkin Park (Lyric Video).mp3" controls></audio>
+    <br>
+   <!-- <audio preload="auto autoplay controls" > 
+        <source src="Burn It Down - Linkin Park (Lyric Video).mp3" type="audio/mp3">           
+        Caso fosse ter outros arquivos de audio poderiamos colocar e o navegador iria entender e colocar o que suporta
+    </audio> -->
+    <br>
+    <h1>Imagem dinâmina</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="imagem flexível">
+    </picture>
+</body>
+</html>
