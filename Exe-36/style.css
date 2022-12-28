@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+ul{
+    font-family: Arial, monospace;
+    display: flex;
+    gap: 72px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+ul:hover li a {
+    color: #30edf4; /* Quando for foco do mouse ficara dessa cor */ 
+}
+
+ul:hover li a:not(:hover){
+    color: white; /* cor que ira ficar quando itens não forem foco do mouse */
+    opacity: 0.3; /* diminui a força das outras cores que o mouse não esta por cima */
+    filter: blur(1px); /* o que esta fora do foco do mouse é fica desfocado */
+}
