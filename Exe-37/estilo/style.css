@@ -61,7 +61,7 @@ section > p {
 }
 
 section.normal {
-    background-color: white;
+    background-color: white; 
     color: black;
 }
 

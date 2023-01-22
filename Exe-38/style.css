@@ -1,0 +1,54 @@
+
+body{
+    color: white;
+    background-color: rgb(92, 91, 91);
+    font-family: Arial, Helvetica, sans-seri f;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between; /* deixa um do lado do outro */
+    list-style-type: none; /* tira a bolinha */
+    align-items: center;
+    padding: 16px;
+ }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #5bbe42;
+}
+
+header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 5px solid #5bbe42;
+}
+
+.center {
+    text-align: center;
+}
+
+header > h1 {
+    color: #5bbe42;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+     margin: 20px;
+}
+
+
+.container {
+    padding: 0px 50px;
+}
