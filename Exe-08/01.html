@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo revisão</title>
+</head>
+<body>
+
+    <h1>Estudo revisão</h1>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0;
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <pre>
+        <code>
+if num >= 7{
+    printf('o numero é sim manor')
+} else {
+    printf('o numero infelizmente não é maior')
+}
+        </code>
+    </pre>
+
+    <pre>
+        <code>
+    function media(){
+        var txtv1 = window.document.querySelector('input#txtvel1')
+        var txtv2 = window.document.querySelector('input#txtvel2')
+        var txtv3 = window.document.querySelector('input#txtvel3')
+        var n1 = Number(txtv1.value)
+        var n2 = Number(txtv2.value)
+        var n3 = Number(txtv3.value) 
+
+        var res = window.document.querySelector('div#res')
+
+        var media = (n1 + n2 + n3) / 3
+
+        var arredonda = parseFloat(media.toFixed(1))
+
+        res.innerHTML = `<p>Sua nota é: <strong>${arredonda}</strong></p>`
+
+        if(media >= 7){
+            res.innerHTML += 'APROVADO!'
+
+            if(media == 10){
+                res.innerHTML += ' <p><strong>Parabéns sua nota foi incrivel!</strong></p>'
+            }
+        } else {
+            res.innerHTML += 'REPROVADO!'
+
+                if(media >= 4){
+                    res.innerHTML += '<p> <strong>Tera que fazer prova substitutiva!</strong></p>'
+                } else {
+                    res.innerHTML += ' <p><strong>Tera que cursar novamente essa materia!</strong></p>'
+            }
+        }
+    }  
+        </code>
+    </pre>
+    <p>Estou estudando <abbr title="JavaScript">JS</abbr> e tambem estou sempre lendo e conhecendo coisas novas</p>
+    <p><abbr title="playstation"><strong>ps5</strong></abbr></p>
+    <p>estou jogando <abbr title="mario bros">mario</abbr></p>
+
+    
+</body>
+</html>
