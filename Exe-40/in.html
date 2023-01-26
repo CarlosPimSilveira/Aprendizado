@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th> <!-- Titulos --> <!-- Escopo coluna = col -->
+                <th scope="col">Nomes</th> <!-- Titulos -->
+                <th colspan="3" scope="colgroup">Filmes</th> <!-- Titulos --> <!-- Escopo coluna grupo = colgroup pois filmes esta em 3 colunas -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!-- Titulos --> <!-- Escopo linhas grupo = rowgroup pois tem 3 linhas de nomes -->
+                <td>Ana maria santos</td> <!-- Dados -->
+                <td>Alien</td> <!-- Dados -->
+                <td>Rambo</td> <!-- Dados -->
+                <td>Vingadores</td> <!-- Dados -->
+            </tr>
+            <tr>
+                <td>Beatriz souza</td> <!-- Dados -->
+                <td>Hulk</td> <!-- Dados -->
+                <td>Inception</td> <!-- Dados -->
+                <td>Batman</td> <!-- Dados -->   
+            </tr>
+            <tr>
+                <td>Claudia Melo</td> <!-- Dados -->
+                <td>Oblivion</td> <!-- Dados -->
+                <td>Matrix</td> <!-- Dados -->
+                <td>Big Hero</td> <!-- Dados -->   
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th> <!-- Titulos --> <!-- Escopo linhas grupo = rowgroup pois tem 3 linhas de nomes -->
+                <td>Bruno Mendonça</td> <!-- Dados -->
+                <td>Intocáveis</td> <!-- Dados -->
+                <td>Amnésia</td> <!-- Dados -->   
+                <td>Gladiador</td> <!-- Dados -->   
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td> <!-- Dados -->
+                <td>Wall-E</td> <!-- Dados -->
+                <td>Oldboy</td> <!-- Dados -->
+                <td>Dangal</td> <!-- Dados -->   
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td> <!-- Dados -->
+                <td>Star Wars 5</td> <!-- Dados -->
+                <td>Taxi Driver</td> <!-- Dados -->
+                <td>Toy Story</td> <!-- Dados -->   
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
