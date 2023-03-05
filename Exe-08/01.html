@@ -67,9 +67,54 @@ if num >= 7{
     }  
         </code>
     </pre>
+    <pre>
+        <code>
+            function media(){
+            var txtv1 = window.document.querySelector('input#txtvel1')
+            var txtv2 = window.document.querySelector('input#txtvel2')
+            var txtv3 = window.document.querySelector('input#txtvel3')
+            var n1 = Number(txtv1.value)
+            var n2 = Number(txtv2.value)
+            var n3 = Number(txtv3.value) 
+
+            var res = window.document.querySelector('div#res')
+
+            var media = (n1 + n2 + n3) / 3
+
+            var arredonda = parseFloat(media.toFixed(1))
+
+            res.innerHTML = `<p>Sua nota é: <strong>${arredonda}</strong></p>`
+
+            if(media >= 7){
+                res.innerHTML += 'APROVADO!'
+
+                if(media == 10){
+                    res.innerHTML += ' <p><strong>Parabéns sua nota foi incrivel!</strong></p>'
+                }
+            } else {
+                res.innerHTML += 'REPROVADO!'
+
+                    if(media >= 4){
+                        res.innerHTML += '<p> <strong>Tera que fazer prova substitutiva!</strong></p>'
+                    } else {
+                        res.innerHTML += ' <p><strong>Tera que cursar novamente essa materia!</strong></p>'
+                }
+            }
+        }
+
+        </code>
+    </pre>
+
     <p>Estou estudando <abbr title="JavaScript">JS</abbr> e tambem estou sempre lendo e conhecendo coisas novas</p>
     <p><abbr title="playstation"><strong>ps5</strong></abbr></p>
     <p>estou jogando <abbr title="mario bros">mario</abbr></p>
+
+    <p><abbr title="Carlos">CEPdS</abbr></p>
+    <p><abbr title="Paris Summertime">PS</abbr></p>
+    <p><abbr title="Bruno">br</abbr></p>
+    <p><abbr title="Monster">Energetico</abbr></p>
+    <p><abbr title="YouTube">Plataforma de video</abbr></p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maiores aperiam et dolor libero ducimus nobis, labore rerum qui magnam esse nam officiis? Magnam cum sit eligendi commodi provident enim. <abbr title="Tempestade">Chuva</abbr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestias, assumenda laudantium rerum suscipit ducimus sunt iusto natus sint? In nostrum nesciunt nulla vitae soluta veniam! Tempora iure ex perferendis?</p>
 
     
 </body>
